@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đơn Xin Học Bổng - Trường ĐH Xây Dựng Hà Nội</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <img src="pexels-pixabay-267885.jpg" alt="Banner" class="header-image">
+            <div class="header-content">
+                <h1>Đơn Xin Học Bổng</h1>
+                <p class="form-description">Vui lòng điền đầy đủ và chính xác các thông tin dưới đây</p>
+            </div>
+        </div>
+
+        <form id="scholarshipForm" class="scholarship-form">
+            <section class="form-section">
+                <h2 class="section-title">Thông tin cá nhân</h2>
+                <div class="form-question">
+                    <label class="question-label">Họ và tên <span class="required">*</span></label>
+                    <input type="text" name="fullName" class="form-input" placeholder="Nhập họ và tên đầy đủ" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Ngày sinh <span class="required">*</span></label>
+                    <input type="date" name="birthDate" class="form-input" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Lớp <span class="required">*</span></label>
+                    <input type="text" name="className" class="form-input" placeholder="VD: 70CS1" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Mã sinh viên <span class="required">*</span></label>
+                    <input type="text" name="studentId" class="form-input" placeholder="VD: 2023001" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Số CCCD <span class="required">*</span></label>
+                    <input type="text" name="idCard" class="form-input" placeholder="12 chữ số" maxlength="12" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Giới tính <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="gender" value="male" required><span class="radio-label">Nam</span></label>
+                        <label class="radio-option"><input type="radio" name="gender" value="female"><span class="radio-label">Nữ</span></label>
+                    </div>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Email <span class="required">*</span></label>
+                    <input type="email" name="email" class="form-input" placeholder="example@st.huce.edu.vn" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Số điện thoại <span class="required">*</span></label>
+                    <input type="tel" name="phone" class="form-input" placeholder="0912345678" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Địa chỉ thường trú <span class="required">*</span></label>
+                    <textarea name="address" class="form-textarea" rows="3" placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành phố" required></textarea>
+                    <span class="error-msg"></span>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2 class="section-title">Thông tin học tập</h2>
+                <div class="form-question">
+                    <label class="question-label">Học kỳ <span class="required">*</span></label>
+                    <select name="semester" class="form-select" required>
+                        <option value="">-- Chọn học kỳ --</option>
+                        <option value="1">Học kỳ 1</option>
+                        <option value="2">Học kỳ 2</option>
+                    </select>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Năm học <span class="required">*</span></label>
+                    <input type="text" name="academicYear" class="form-input" placeholder="VD: 2023-2024" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Khoa <span class="required">*</span></label>
+                    <select name="faculty" class="form-select" required>
+                        <option value="">-- Chọn khoa --</option>
+                        <option value="ktqlxd">Kinh tế & Quản lý Xây dựng</option>
+                        <option value="cntt">Công nghệ Thông tin</option>
+                        <option value="ck">Cơ khí</option>
+                        <option value="xddc">Xây dựng Dân dụng & Công nghiệp</option>
+                        <option value="ktqh">Kiến trúc và Quy hoạch</option>
+                        <option value="xdctb">Xây dựng CTB & DK</option>
+                        <option value="ktmt">Kỹ thuật Môi trường</option>
+                        <option value="dtksclc">Đào tạo Kỹ sư Chất lượng cao</option>
+                        <option value="cd">Cầu Đường</option>
+                        <option value="ctt">Công trình Thủy</option>
+                        <option value="vlxd">Vật liệu Xây dựng</option>
+                    </select>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">GPA tích lũy <span class="required">*</span></label>
+                    <input type="number" name="gpa" class="form-input" placeholder="Thang điểm 4.0 (VD: 3.50)" step="0.01" min="0" max="4" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Điểm rèn luyện <span class="required">*</span></label>
+                    <input type="number" name="trainingScore" class="form-input" placeholder="Thang điểm 100 (VD: 85)" min="0" max="100" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Số tín chỉ tích lũy <span class="required">*</span></label>
+                    <input type="number" name="totalCredits" class="form-input" placeholder="VD: 60" min="0" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Số tín chỉ nợ <span class="required">*</span></label>
+                    <input type="number" name="debtCredits" class="form-input" placeholder="VD: 0" min="0" required>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Xếp loại học lực <span class="required">*</span></label>
+                    <div class="helper-text">
+                        <p><strong>Hướng dẫn xếp loại:</strong></p>
+                        <ul>
+                            <li><strong>Xuất sắc:</strong> GPA 3.6-4.0 (9.0-10.0)</li>
+                            <li><strong>Giỏi:</strong> GPA 3.2-&lt;3.6 (8.0-&lt;9.0)</li>
+                            <li><strong>Khá:</strong> GPA 2.5-&lt;3.2 (7.0-&lt;8.0)</li>
+                            <li><strong>Trung bình:</strong> GPA 2.0-&lt;2.5 (5.0-&lt;7.0)</li>
+                        </ul>
+                    </div>
+                    <select name="academicRank" class="form-select" required>
+                        <option value="">-- Chọn xếp loại --</option>
+                        <option value="excellent">Xuất sắc</option>
+                        <option value="good">Giỏi</option>
+                        <option value="fair">Khá</option>
+                        <option value="average">Trung bình</option>
+                    </select>
+                    <span class="error-msg"></span>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2 class="section-title">Thành tích cá nhân</h2>
+                <div class="form-question">
+                    <label class="question-label">Thành tích trong học tập <span class="required">*</span></label>
+                    <textarea name="studyAchievements" class="form-textarea" rows="5" placeholder="Mô tả chi tiết các thành tích học tập (giải thưởng, học bổng, bài báo, dự án...)" required></textarea>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Ảnh minh chứng thành tích học tập <span class="optional">(Tùy chọn)</span></label>
+                    <input type="file" name="studyProof" class="form-file" accept="image/*" multiple>
+                    <div class="file-hint">Chấp nhận: JPG, PNG (tối đa 5MB mỗi file)</div>
+                    <div id="studyProofPreview" class="image-preview"></div>
+                </div>
+                <div class="form-question">
+                    <label class="question-label">Thành tích tập thể <span class="required">*</span></label>
+                    <textarea name="teamAchievements" class="form-textarea" rows="5" placeholder="Mô tả các hoạt động tập thể, đoàn thể, tình nguyện, câu lạc bộ..." required></textarea>
+                    <span class="error-msg"></span>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2 class="section-title">Lý do xin học bổng</h2>
+                <div class="form-question">
+                    <label class="question-label">Vì sao bạn cần học bổng này? <span class="required">*</span></label>
+                    <textarea name="reason" class="form-textarea" rows="8" placeholder="Hãy chia sẻ hoàn cảnh, động lực và kế hoạch sử dụng học bổng của bạn..." required></textarea>
+                    <span class="error-msg"></span>
+                    <!-- <div class="character-count"><span id="charCount">0</span> / 50 ký tự tối thiểu</div> -->
+                </div>
+            </section>
+
+            <section class="form-section">
+                <div class="form-question">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="agreement" required>
+                        <span class="checkbox-label">Tôi cam đoan rằng tất cả thông tin trên là chính xác và trung thực. Tôi hiểu rằng việc cung cấp thông tin sai lệch có thể dẫn đến việc bị hủy bỏ học bổng. <span class="required">*</span></span>
+                    </label>
+                    <span class="error-msg"></span>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Nộp đơn</button>
+                <button type="button" class="btn-clear" onclick="clearForm()">Xóa toàn bộ</button>
+            </div>
+        </form>
+
+        <div class="form-footer">
+            <p>Biểu mẫu được tạo bởi <strong>Trường Đại học Xây Dựng Hà Nội</strong></p>
+            <p class="footer-note"><span class="required">*</span> Các trường bắt buộc</p>
+        </div>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h2>Đã gửi đơn thành công!</h2>
+            <p>Đơn xin học bổng của bạn đã được ghi nhận.</p>
+            <p class="modal-detail">Chúng tôi sẽ xem xét và phản hồi trong vòng 7-10 ngày làm việc.</p>
+            <button class="btn-close-modal" onclick="closeModal()">Đóng</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
