@@ -13,5 +13,7 @@ scholarship-form-project/
 ├── script.js           
 ├── images/
 │   └── pexels-pixabay-267885.jpg  
+├── report/
+│   └── scholarship-report-latex.pdf
 └── README.md           
 ```
