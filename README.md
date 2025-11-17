@@ -8,10 +8,10 @@ Dự án xây dựng **biểu mẫu xin học bổng trực tuyến** cho sinh v
 
 ```text
 scholarship-form-project/
-├── index.html          # Trang chính: biểu mẫu xin học bổng
-├── style.css           # Định dạng giao diện
-├── script.js           # Xử lý logic, validate dữ liệu, lưu localStorage
+├── index.html          
+├── style.css           
+├── script.js           
 ├── images/
-│   └── pexels-pixabay-267885.jpg  # Ảnh banner đầu form
-└── README.md           # Tài liệu giới thiệu ngắn
+│   └── pexels-pixabay-267885.jpg  
+└── README.md           
 ```
