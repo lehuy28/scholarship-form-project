@@ -14,6 +14,6 @@ scholarship-form-project/
 ├── images/
 │   └── pexels-pixabay-267885.jpg  
 ├── report/
-│   └── scholar-form-report.pdf
+│   └── form-project-report.pdf
 └── README.md           
 ```
